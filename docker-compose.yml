@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  dev-environment-cli:
+    build: .
+    image: dev-environment-cli:latest
+    container_name: dev-environment-cli
+    volumes:
+      - ${PWD}:/app
